@@ -1,0 +1,36 @@
+name: GCES Eduardo
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.8
+
+    - name: dependencies
+      run: |
+        python3 -m pip install --upgrade pip
+        pip install flake8
+        pip install -r requirements.txt
+    - name: poetry
+      run: |
+        pip install poetry
+    - name: pytest
+      run: |
+        pip install pytest
+        export PYTHONPATH=src
+        pytest --cov
