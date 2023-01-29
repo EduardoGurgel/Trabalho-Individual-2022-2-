@@ -4,21 +4,56 @@ services:
   app:
     container_name: myapp
     image: python:3.8
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     command: python src/main.py
+    command:  tail -f /dev/null
+
     volumes:
       - .:/app
     ports:
       - "3000:3000"
     depends_on:
-      - mongo
+      - postgres
+
 
   mongo:
     image: mongo:latest
-    container_name: mongo-db
+    container_name: mongo_database
     restart: always
+    ports:
+      - "27017:27017"
     environment:
       MONGO_INITDB_ROOT_USERNAME: lappis
       MONGO_INITDB_ROOT_PASSWORD: lappis
+    volumes:
+      - .:/mongo
+
+  postgres:
+        image: postgres:latest
+        container_name: postgresql_metabase
+        restart: always
+        environment:
+            POSTGRES_DB: metabase
+            POSTGRES_USER: lappis
+            POSTGRES_PASSWORD: lappis
+
+  meta_base:
+    image: metabase/metabase:latest
+    container_name: metabase
+    restart: always
+    environment:
+      MB_DB_TYPE: postgres
+      MB_DB_DBNAME: metabase
+      MB_DB_PORT: 5432
+      MB_DB_USER: lappis
+      MB_DB_PASS: lappis
+      MB_DB_HOST: postgres
+      MB_DB_FILE: /metabase-data/metabase.db
+    depends_on:
+      - postgres
+    volumes:
+      - .:/metabase
     ports:
-      - 27017:27017
+      - "8000:8000"
