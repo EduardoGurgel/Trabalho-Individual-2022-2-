@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="pt-BR">
+  <compounddef id="concatenate__columns_8py" kind="file" language="Python">
+    <compoundname>concatenate_columns.py</compoundname>
+    <innernamespace refid="namespacepre__processing">pre_processing</innernamespace>
+    <innernamespace refid="namespacepre__processing_1_1concatenate__columns">pre_processing::concatenate_columns</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacepre__processing_1_1concatenate__columns" refkind="compound"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal">D:\Gitclone\Trabalho-Individual-2022-2-&gt;doxypypy<sp/>-a<sp/>-c<sp/></highlight><highlight class="stringliteral">&quot;D:/Gitclone/Trabalho-Individual-2022-2-/src/data_pipeline/pre_processing/concatenate_columns.py&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+    </programlisting>
+    <location file="src/data_pipeline/pre_processing/concatenate_columns.py"/>
+  </compounddef>
+</doxygen>

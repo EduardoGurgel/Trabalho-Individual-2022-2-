@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="pt-BR">
+  <compounddef id="namespacefeature__engineering_1_1key__smash" kind="namespace" language="Python">
+    <compoundname>feature_engineering::key_smash</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacefeature__engineering_1_1key__smash_1ad17939a92506807b5903c94f20d1beae" prot="public" static="no" mutable="no">
+        <type>Gitclone</type>
+        <definition>Gitclone feature_engineering::key_smash.D</definition>
+        <argsstring></argsstring>
+        <name>D</name>
+        <qualifiedname>feature_engineering.key_smash.D</qualifiedname>
+        <initializer>:\Gitclone\Trabalho-Individual-2022-2-&gt;doxypypy -a -c &quot;D:/Gitclone/Trabalho-Individual-2022-2-/src/data_pipeline/feature_engineering/key_smash.py&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/data_pipeline/feature_engineering/key_smash.py" line="2" column="1" bodyfile="src/data_pipeline/feature_engineering/key_smash.py" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/data_pipeline/feature_engineering/key_smash.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

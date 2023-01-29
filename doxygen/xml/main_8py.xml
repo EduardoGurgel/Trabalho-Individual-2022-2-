@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="pt-BR">
+  <compounddef id="main_8py" kind="file" language="Python">
+    <compoundname>main.py</compoundname>
+    <innernamespace refid="namespacemain">main</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacemain" refkind="compound"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal">D:\Gitclone\Trabalho-Individual-2022-2-&gt;doxypypy<sp/>-a<sp/>-c<sp/></highlight><highlight class="stringliteral">&quot;D:/Gitclone/Trabalho-Individual-2022-2-/src/main.py&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+    </programlisting>
+    <location file="src/main.py"/>
+  </compounddef>
+</doxygen>

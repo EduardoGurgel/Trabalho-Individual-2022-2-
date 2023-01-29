@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="pt-BR">
+  <compounddef id="namespaceparser_1_1model__parser" kind="namespace" language="Python">
+    <compoundname>parser::model_parser</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceparser_1_1model__parser_1ad707dd3c63ab049e5fae78a4ab01b5b0" prot="public" static="no" mutable="no">
+        <type>Gitclone</type>
+        <definition>Gitclone parser::model_parser.D</definition>
+        <argsstring></argsstring>
+        <name>D</name>
+        <qualifiedname>parser.model_parser.D</qualifiedname>
+        <initializer>:\Gitclone\Trabalho-Individual-2022-2-&gt;doxypypy -a -c &quot;D:/Gitclone/Trabalho-Individual-2022-2-/src/parser/model_parser.py&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/parser/model_parser.py" line="2" column="1" bodyfile="src/parser/model_parser.py" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/parser/model_parser.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

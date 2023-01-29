@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="pt-BR">
+  <compounddef id="docker-compose_8yml" kind="file" language="C++">
+    <compoundname>docker-compose.yml</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline></codeline>
+<codeline><highlight class="normal">D:\Gitclone\Trabalho-Individual-2022-2-&gt;doxypypy<sp/>-a<sp/>-c<sp/>&quot;D:/Gitclone/Trabalho-Individual-2022-2-/docker-compose.yml&quot;<sp/></highlight></codeline>
+    </programlisting>
+    <location file="docker-compose.yml"/>
+  </compounddef>
+</doxygen>

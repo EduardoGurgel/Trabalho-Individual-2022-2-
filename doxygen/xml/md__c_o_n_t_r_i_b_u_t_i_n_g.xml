@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="pt-BR">
+  <compounddef id="md__c_o_n_t_r_i_b_u_t_i_n_g" kind="page">
+    <compoundname>md_CONTRIBUTING</compoundname>
+    <title>CONTRIBUTING</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>D:\Gitclone\Trabalho-Individual-2022-2-&gt;doxypypy -a -c &quot;D:/Gitclone/Trabalho-Individual-2022-2-/CONTRIBUTING.md&quot; </para>
+    </detaileddescription>
+    <location file="CONTRIBUTING.md"/>
+  </compounddef>
+</doxygen>

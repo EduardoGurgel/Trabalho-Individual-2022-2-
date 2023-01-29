@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="pt-BR">
+  <compounddef id="md__c_o_d_e__o_f__c_o_n_d_u_c_t" kind="page">
+    <compoundname>md_CODE_OF_CONDUCT</compoundname>
+    <title>CODE_OF_CONDUCT</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>D:\Gitclone\Trabalho-Individual-2022-2-&gt;doxypypy -a -c &quot;D:/Gitclone/Trabalho-Individual-2022-2-/CODE_OF_CONDUCT.md&quot; </para>
+    </detaileddescription>
+    <location file="CODE_OF_CONDUCT.md"/>
+  </compounddef>
+</doxygen>

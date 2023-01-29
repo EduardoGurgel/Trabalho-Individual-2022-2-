@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="pt-BR">
+  <compounddef id="namespacepre__processing" kind="namespace" language="Python">
+    <compoundname>pre_processing</compoundname>
+    <innernamespace refid="namespacepre__processing_1_1concatenate__columns">pre_processing::concatenate_columns</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepre__processing_1a989fabad4e8adc9fc8c8e0f33f63cb43" prot="public" static="no" mutable="no">
+        <type>Gitclone</type>
+        <definition>Gitclone pre_processing.D</definition>
+        <argsstring></argsstring>
+        <name>D</name>
+        <qualifiedname>pre_processing.D</qualifiedname>
+        <initializer>:\Gitclone\Trabalho-Individual-2022-2-&gt;doxypypy -a -c &quot;D:/Gitclone/Trabalho-Individual-2022-2-/src/data_pipeline/pre_processing/__init__.py&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/data_pipeline/pre_processing/__init__.py" line="2" column="1" bodyfile="src/data_pipeline/pre_processing/__init__.py" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/data_pipeline/pre_processing/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

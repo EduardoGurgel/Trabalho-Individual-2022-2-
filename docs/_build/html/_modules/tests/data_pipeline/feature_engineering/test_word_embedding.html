@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tests.data_pipeline.feature_engineering.test_word_embedding &mdash; documentação GCES-Projeto-Individual 0.0.1</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script src="../../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../../_static/translations.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../../genindex.html" />
+    <link rel="search" title="Buscar" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../../index.html" class="icon icon-home"> GCES-Projeto-Individual
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../modules.html">src</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">GCES-Projeto-Individual</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../../../index.html">Código do módulo</a></li>
+      <li class="breadcrumb-item active">tests.data_pipeline.feature_engineering.test_word_embedding</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Código fonte para tests.data_pipeline.feature_engineering.test_word_embedding</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="kn">from</span> <span class="nn">data_pipeline.feature_engineering.word_embedding</span> <span class="kn">import</span> <span class="n">WordEmbedding</span>
+
+<div class="viewcode-block" id="TestWordEmbedding"><a class="viewcode-back" href="../../../../tests.data_pipeline.feature_engineering.html#tests.data_pipeline.feature_engineering.test_word_embedding.TestWordEmbedding">[documentos]</a><span class="k">class</span> <span class="nc">TestWordEmbedding</span><span class="p">:</span>
+<div class="viewcode-block" id="TestWordEmbedding.setup_method"><a class="viewcode-back" href="../../../../tests.data_pipeline.feature_engineering.html#tests.data_pipeline.feature_engineering.test_word_embedding.TestWordEmbedding.setup_method">[documentos]</a>    <span class="k">def</span> <span class="nf">setup_method</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">lang</span> <span class="o">=</span> <span class="s2">&quot;es&quot;</span>
+        <span class="n">dimensions</span> <span class="o">=</span> <span class="mi">25</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">we</span> <span class="o">=</span> <span class="n">WordEmbedding</span><span class="p">(</span><span class="n">lang</span><span class="p">,</span> <span class="n">dimensions</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="TestWordEmbedding.test_get_embedding"><a class="viewcode-back" href="../../../../tests.data_pipeline.feature_engineering.html#tests.data_pipeline.feature_engineering.test_word_embedding.TestWordEmbedding.test_get_embedding">[documentos]</a>    <span class="k">def</span> <span class="nf">test_get_embedding</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;This is a text&quot;</span>
+        <span class="n">expected</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.06799883</span><span class="p">,</span> <span class="mf">0.17547965</span><span class="p">,</span> <span class="mf">0.47599664</span><span class="p">,</span> <span class="mf">0.16108984</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1360625</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.10632467</span><span class="p">,</span>
+                    <span class="o">-</span><span class="mf">0.10654568</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.09805</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.33004168</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.33528003</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.23304085</span><span class="p">,</span> <span class="mf">0.36661038</span><span class="p">,</span>
+                    <span class="o">-</span><span class="mf">0.5797167</span><span class="p">,</span> <span class="mf">0.53252834</span><span class="p">,</span> <span class="mf">0.30276018</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.01584417</span><span class="p">,</span> <span class="mf">0.85087484</span><span class="p">,</span> <span class="mf">0.14121284</span><span class="p">,</span>
+                    <span class="mf">0.74862367</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.33011952</span><span class="p">,</span> <span class="mf">0.015432</span><span class="p">,</span> <span class="mf">0.02694534</span><span class="p">,</span> <span class="mf">0.10118082</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.34017918</span><span class="p">,</span>
+                    <span class="o">-</span><span class="mf">0.14560167</span><span class="p">]</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">we</span><span class="o">.</span><span class="n">get_embedding</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">expected</span><span class="p">)</span></div></div>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Eduardo Gurgel.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

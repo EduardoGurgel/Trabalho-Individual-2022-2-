@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="pt-BR">
+  <compounddef id="namespacetests_1_1parser" kind="namespace" language="Python">
+    <compoundname>tests::parser</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacetests_1_1parser_1a2f7dc8357295e3b98e1162f9c127d32d" prot="public" static="no" mutable="no">
+        <type>Gitclone</type>
+        <definition>Gitclone tests::parser.D</definition>
+        <argsstring></argsstring>
+        <name>D</name>
+        <qualifiedname>tests.parser.D</qualifiedname>
+        <initializer>:\Gitclone\Trabalho-Individual-2022-2-&gt;doxypypy -a -c &quot;D:/Gitclone/Trabalho-Individual-2022-2-/tests/parser/__init__.py&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/parser/__init__.py" line="2" column="1" bodyfile="tests/parser/__init__.py" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="tests/parser/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>
