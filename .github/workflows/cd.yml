@@ -29,4 +29,7 @@ jobs:
     - name: token
       run: echo $PYPI_TOKEN
     - name: publish
-      run: poetry publish $PYPI_TOKEN
+      run: poetry config http-basic.pypi ${{ secrets.PYPI_TOKEN_USERNAME }} ${{ secrets.PYPI_TOKEN_PASSWORD }}
+
+
+
