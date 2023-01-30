@@ -29,4 +29,4 @@ jobs:
     - name: token
       run: echo $PYPI_TOKEN
     - name: publish
-      run: poetry publish --username __token__ --password $PYPI_TOKEN
+      run: poetry publish $PYPI_TOKEN
