@@ -7,14 +7,13 @@ on:
   pull_request:
     branches:
       - master
-env:
-  PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
-  PYPI_TOKEN_USERNAME: ${{ secrets.PYPI_TOKEN_USERNAME }}
-  PYPI_TOKEN_PASSWORD: ${{ secrets.PYPI_TOKEN_USERNAME }}
+#env:
+#  PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
+#  PYPI_TOKEN_USERNAME: ${{ secrets.PYPI_TOKEN_USERNAME }}
+#  PYPI_TOKEN_PASSWORD: ${{ secrets.PYPI_TOKEN_USERNAME }}
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -54,7 +53,7 @@ jobs:
     - name: Build
       run: poetry build
     - name: token
-      run: echo $PYPI_TOKEN
+#      run: echo $PYPI_TOKEN
 #   - name: publish
 #      run: poetry config ${{ secrets.PYPI_TOKEN_USERNAME }} ${{ secrets.PYPI_TOKEN_PASSWORD }}
 #    - name: Build and Publish
