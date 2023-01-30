@@ -22,9 +22,11 @@ jobs:
       with:
         python-version: 3.8
 
-    - name: poetry
-      run: |
-        run: curl -sSL https://install.python-poetry.org | python3 - --git https://github.com/python-poetry/poetry.git@master
-        run: poetry build
-        run: echo $PYPI_TOKEN
-        run: poetry publish --username __token__ --password $PYPI_TOKEN
+    - name: poetry install
+      run: curl -sSL https://install.python-poetry.org | python3 - --git https://github.com/python-poetry/poetry.git@master
+    - name: Build
+      run: poetry build
+    - name: token
+      run: echo $PYPI_TOKEN
+    - name: publish
+      run: poetry publish --username __token__ --password $PYPI_TOKEN
