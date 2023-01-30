@@ -7,8 +7,6 @@ on:
   pull_request:
     branches:
       - master
-env:
-  PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
 
 jobs:
   build:
