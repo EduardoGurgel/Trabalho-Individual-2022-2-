@@ -30,6 +30,10 @@ jobs:
       run: echo $PYPI_TOKEN
     - name: publish
       run: poetry config http-basic.pypi ${{ secrets.PYPI_TOKEN_USERNAME }} ${{ secrets.PYPI_TOKEN_PASSWORD }}
+    - name: Build and Publish
+      run: |
+        poetry build
+        poetry publish
 
 
 
