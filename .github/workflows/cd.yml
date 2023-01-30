@@ -1,0 +1,30 @@
+name: GCES Eduardo
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+env:
+  PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.8
+
+    - name: poetry
+      run: |
+        run: curl -sSL https://install.python-poetry.org | python3 - --git https://github.com/python-poetry/poetry.git@master
+        run: poetry build
+        run: echo $PYPI_TOKEN
+        run: poetry publish --username __token__ --password $PYPI_TOKEN
