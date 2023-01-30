@@ -7,6 +7,8 @@ on:
   pull_request:
     branches:
       - master
+env:
+  PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
 
 jobs:
   build:
@@ -27,11 +29,10 @@ jobs:
     - name: token
       run: echo $PYPI_TOKEN
     - name: publish
-      run: poetry config http-basic.pypi ${{ secrets.PYPI_TOKEN_USERNAME }} ${{ secrets.PYPI_TOKEN_PASSWORD }}
+      run: poetry config ${{ secrets.PYPI_TOKEN }}
     - name: Build and Publish
       run: |
         poetry build
         poetry publish
-
 
 
