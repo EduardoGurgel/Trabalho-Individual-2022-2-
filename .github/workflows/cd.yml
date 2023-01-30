@@ -9,6 +9,8 @@ on:
       - master
 env:
   PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
+  PYPI_TOKEN_USERNAME: ${{ secrets.PYPI_TOKEN_USERNAME }}
+  PYPI_TOKEN_PASSWORD: ${{ secrets.PYPI_TOKEN_USERNAME }}
 
 jobs:
   build:
